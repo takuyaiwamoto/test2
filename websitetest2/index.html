@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirari-chan K-Arena Live | PPV Ticket Sales</title>
+  <meta name="description" content="Vtuber Kirari-chan's K-Arena Live Performance PPV. Get your tickets now!" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./sparkle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="logo">KIRARI <span class="highlight">LIVE</span></div>
+      <nav class="nav">
+        <a href="#info">Info</a>
+        <a href="#ticket" class="btn-ticket-nav">Get Tickets</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-visual">
+          <img src="./kirari_pastel_key_visual.png" alt="Kirari-chan Key Visual" onerror="this.style.display='none'">
+        </div>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="sub">Vtuber Kirari-chan</span>
+            <span class="main">K-ARENA LIVE 2025</span>
+          </h1>
+          <div class="hero-date">2025.1.24 (Fri) 18:00 START</div>
+          <div id="countdown" class="countdown">
+            <div class="time-unit"><span id="days">00</span><span class="label">DAYS</span></div>
+            <div class="time-unit"><span id="hours">00</span><span class="label">HOURS</span></div>
+            <div class="time-unit"><span id="minutes">00</span><span class="label">MINS</span></div>
+            <div class="time-unit"><span id="seconds">00</span><span class="label">SECS</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="info" class="section info-section">
+        <h2 class="section-title">EVENT INFO</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>DATE</h3>
+            <p class="info-value">2025.1.24 (Fri)</p>
+            <p class="info-sub">Open 17:00 / Start 18:00</p>
+          </div>
+          <div class="info-card">
+            <h3>VENUE</h3>
+            <p class="info-value">K-Arena Yokohama</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ticket" class="section ticket-section">
+        <h2 class="section-title">PPV TICKETS</h2>
+        <p class="ticket-period">Sales Period: 12/24 20:00 - 2/12 21:00</p>
+
+        <div class="ticket-container">
+          <div class="ticket-card browser">
+            <div class="ticket-header">
+              <h3>Browser Viewing</h3>
+            </div>
+            <div class="ticket-price">¥4,500 <span class="tax">(tax incl.)</span></div>
+            <ul class="ticket-features">
+              <li>High Quality Streaming</li>
+              <li>Archive until 2/12 23:59</li>
+            </ul>
+            <button class="btn-buy">Buy Now</button>
+          </div>
+
+          <div class="ticket-card app popular">
+            <div class="badge">RECOMMENDED</div>
+            <div class="ticket-header">
+              <h3>App Viewing</h3>
+            </div>
+            <div class="ticket-price">¥4,900 <span class="tax">(tax incl.)</span></div>
+            <ul class="ticket-features">
+              <li>High Quality Streaming</li>
+              <li>Archive until 2/12 23:59</li>
+              <li class="bonus">★ Bonus: Original Voice Message</li>
+            </ul>
+            <button class="btn-buy primary">Buy Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Kirari Project. All rights reserved.</p>
+    </footer>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
